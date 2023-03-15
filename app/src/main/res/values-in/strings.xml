@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="register">Daftar</string>
+    <string name="name">Nama</string>
+    <string name="date">Tanggal</string>
+    <string name="title">Judul</string>
+    <string name="add_story">Tambah Story</string>
+    <string name="password_less_than_6">Minimum 6 karakter</string>
+    <string name="email_not_valid">Email tidak valid</string>
+    <string name="story_image">Gambar Story</string>
+    <string name="camera">Kamera</string>
+    <string name="gallery">Galeri</string>
+    <string name="preview_image">Gambar Preview</string>
+    <string name="description">Deskripsi</string>
+</resources>
