@@ -1,3 +1,22 @@
 <resources>
-    <string name="app_name">MyStory</string>
+    <string name="app_name" translatable="false">MyStory</string>
+    <string name="login" translatable="false">Login</string>
+    <string name="email" translatable="false">Email</string>
+    <string name="password" translatable="false">Password</string>
+    <string name="register">Register</string>
+    <string name="name">Name</string>
+    <string name="action_logout" translatable="false">Log out</string>
+    <string name="date">Date</string>
+    <string name="title">Title</string>
+    <string name="story" translatable="false">Story</string>
+    <string name="add_story">Add Story</string>
+    <string name="submit" translatable="false">Submit</string>
+    <string name="password_less_than_6">Must have 6 characters</string>
+    <string name="email_not_valid">Email not valid</string>
+    <string name="item_story_image" translatable="false">Item Story Image</string>
+    <string name="story_image">Story Image</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="preview_image">Preview Image</string>
+    <string name="description">Description</string>
 </resources>
