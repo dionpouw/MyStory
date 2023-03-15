@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.detailFragment.DetailFragment">
+
+    <ImageView
+        android:id="@+id/imageView_detail"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:contentDescription="@string/story_image"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@tools:sample/avatars" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/textView_detail_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:paddingTop="8dp"
+        android:textColor="?android:attr/textColorPrimary"
+        android:textSize="21sp"
+        app:layout_constraintStart_toStartOf="@id/imageView_detail"
+        app:layout_constraintTop_toBottomOf="@id/imageView_detail"
+        tools:text="Bambang Cahyono" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/textView_detail_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:paddingTop="8dp"
+        android:textColor="?android:attr/textColorPrimary"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@id/textView_detail_name"
+        app:layout_constraintStart_toStartOf="@id/textView_detail_name"
+        app:layout_constraintTop_toBottomOf="@id/textView_detail_name"
+        tools:text="asdfsdfasdfasdfasdfasdfaasdfasdfassdfaasdfsdfaasdfafsdfsdasdfsdfasdfadf" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

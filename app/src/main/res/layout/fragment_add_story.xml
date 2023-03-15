@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.addStoryFragment.AddStoryFragment">
+
+    <ImageView
+        android:id="@+id/image_preview"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:contentDescription="@string/preview_image"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/camera_image_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/camera"
+        app:layout_constraintEnd_toStartOf="@+id/gallery_image_button"
+        app:layout_constraintStart_toStartOf="@id/image_preview"
+        app:layout_constraintTop_toBottomOf="@id/image_preview" />
+
+    <Button
+        android:id="@+id/gallery_image_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/gallery"
+        app:layout_constraintEnd_toEndOf="@id/image_preview"
+        app:layout_constraintStart_toEndOf="@id/camera_image_button"
+        app:layout_constraintTop_toBottomOf="@id/image_preview" />
+
+    <EditText
+        android:id="@+id/desc_edit_text"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="8dp"
+        android:autofillHints="text"
+        android:background="@drawable/edit_border"
+        android:fontFamily="@font/poppins"
+        android:gravity="start|top"
+        android:hint="@string/description"
+        android:inputType="text"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/image_preview"
+        app:layout_constraintStart_toStartOf="@+id/image_preview"
+        app:layout_constraintTop_toBottomOf="@id/gallery_image_button" />
+
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/submit"
+        app:layout_constraintEnd_toEndOf="@+id/desc_edit_text"
+        app:layout_constraintStart_toStartOf="@id/desc_edit_text"
+        app:layout_constraintTop_toBottomOf="@id/desc_edit_text" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
