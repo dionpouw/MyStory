@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/item_story_img"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:contentDescription="@string/item_story_image"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@tools:sample/avatars" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/item_story_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="@id/item_story_img"
+            app:layout_constraintTop_toBottomOf="@id/item_story_img"
+            tools:text="Story name" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/item_story_desc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:maxLines="2"
+            android:textColor="?android:attr/textColorSecondary"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@id/item_story_name"
+            app:layout_constraintTop_toBottomOf="@id/item_story_name"
+            tools:text="Story desc" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/item_story_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/poppins"
+            android:textColor="?android:attr/textColorSecondary"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/item_story_desc"
+            tools:text="Story date" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</com.google.android.material.card.MaterialCardView>
