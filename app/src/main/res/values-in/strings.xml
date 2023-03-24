@@ -12,4 +12,12 @@
     <string name="gallery">Galeri</string>
     <string name="preview_image">Gambar Preview</string>
     <string name="description">Deskripsi</string>
+    <string name="error_camera_x">Gagal mendapatkan gambar</string>
+    <string name="image_saved">Gambar disimpan</string>
+    <string name="select_image">Pilih gambar</string>
+    <string name="this_is_image_description">Ini adalah deskripsi gambar</string>
+    <string name="please_select_image_first">Silahkan pilih gambar dahulu</string>
+    <string name="error_message">Gagal mendapatkan cerita</string>
+    <string name="failed_add_story">Gagal menambah cerita</string>
+    <string name="success_add_story">Sukses menambah cerita</string>
 </resources>
