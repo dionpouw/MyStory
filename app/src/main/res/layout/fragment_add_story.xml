@@ -40,7 +40,7 @@
         app:layout_constraintTop_toBottomOf="@id/image_preview" />
 
     <EditText
-        android:id="@+id/desc_edit_text"
+        android:id="@+id/ed_add_description"
         android:layout_width="0dp"
         android:layout_height="200dp"
         android:layout_marginTop="8dp"
@@ -56,15 +56,15 @@
         app:layout_constraintTop_toBottomOf="@id/gallery_image_button" />
 
     <Button
-        android:id="@+id/submit_button"
+        android:id="@+id/button_add"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:fontFamily="@font/poppins"
         android:text="@string/submit"
-        app:layout_constraintEnd_toEndOf="@+id/desc_edit_text"
-        app:layout_constraintStart_toStartOf="@id/desc_edit_text"
-        app:layout_constraintTop_toBottomOf="@id/desc_edit_text" />
+        app:layout_constraintEnd_toEndOf="@+id/ed_add_description"
+        app:layout_constraintStart_toStartOf="@id/ed_add_description"
+        app:layout_constraintTop_toBottomOf="@id/ed_add_description" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
