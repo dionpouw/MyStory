@@ -39,7 +39,6 @@ class PasswordEditText : AppCompatEditText {
                     this@PasswordEditText.error = null
                 }
             }
-
             override fun afterTextChanged(p0: Editable?) {}
         })
     }
