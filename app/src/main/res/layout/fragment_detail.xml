@@ -4,10 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="8dp"
     tools:context=".presentation.detailFragment.DetailFragment">
 
     <ImageView
-        android:id="@+id/imageView_detail"
+        android:id="@+id/iv_detail_photo"
         android:layout_width="match_parent"
         android:layout_height="250dp"
         android:contentDescription="@string/story_image"
@@ -18,28 +19,28 @@
         tools:src="@tools:sample/avatars" />
 
     <com.google.android.material.textview.MaterialTextView
-        android:id="@+id/textView_detail_name"
+        android:id="@+id/tv_detail_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins_bold"
         android:paddingTop="8dp"
         android:textColor="?android:attr/textColorPrimary"
         android:textSize="21sp"
-        app:layout_constraintStart_toStartOf="@id/imageView_detail"
-        app:layout_constraintTop_toBottomOf="@id/imageView_detail"
+        app:layout_constraintStart_toStartOf="@id/iv_detail_photo"
+        app:layout_constraintTop_toBottomOf="@id/iv_detail_photo"
         tools:text="Bambang Cahyono" />
 
     <com.google.android.material.textview.MaterialTextView
-        android:id="@+id/textView_detail_desc"
+        android:id="@+id/tv_detail_description"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins"
         android:paddingTop="8dp"
         android:textColor="?android:attr/textColorPrimary"
         android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="@id/textView_detail_name"
-        app:layout_constraintStart_toStartOf="@id/textView_detail_name"
-        app:layout_constraintTop_toBottomOf="@id/textView_detail_name"
+        app:layout_constraintEnd_toEndOf="@id/tv_detail_name"
+        app:layout_constraintStart_toStartOf="@id/tv_detail_name"
+        app:layout_constraintTop_toBottomOf="@id/tv_detail_name"
         tools:text="asdfsdfasdfasdfasdfasdfaasdfasdfassdfaasdfsdfaasdfafsdfsdasdfsdfasdfadf" />
 
 
