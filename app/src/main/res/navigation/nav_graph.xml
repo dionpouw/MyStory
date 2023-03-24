@@ -18,7 +18,11 @@
         android:id="@+id/cameraFragment"
         android:name="com.jeflette.mystory.presentation.cameraFragment.CameraFragment"
         android:label="fragment_camera"
-        tools:layout="@layout/fragment_camera" />
+        tools:layout="@layout/fragment_camera" >
+        <action
+            android:id="@+id/action_cameraFragment_to_addStoryFragment"
+            app:destination="@id/addStoryFragment" />
+    </fragment>
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.jeflette.mystory.presentation.homeFragment.HomeFragment"
@@ -30,6 +34,9 @@
         <action
             android:id="@+id/action_homeFragment_to_addStoryFragment"
             app:destination="@id/addStoryFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
     </fragment>
     <fragment
         android:id="@+id/detailFragment"
