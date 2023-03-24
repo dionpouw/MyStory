@@ -3,7 +3,9 @@ package com.jeflette.mystory
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.jeflette.mystory.databinding.ActivityMainBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
     private var _binding: ActivityMainBinding? = null
